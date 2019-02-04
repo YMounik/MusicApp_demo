@@ -14,6 +14,12 @@
 		08510CAD220744FB00FAE53E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08510CAB220744FB00FAE53E /* LaunchScreen.storyboard */; };
 		08510CB8220744FB00FAE53E /* MusicReleasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08510CB7220744FB00FAE53E /* MusicReleasesTests.swift */; };
 		08510CC3220744FB00FAE53E /* MusicReleasesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08510CC2220744FB00FAE53E /* MusicReleasesUITests.swift */; };
+		08510CD62207470F00FAE53E /* MRNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08510CD52207470F00FAE53E /* MRNetworkManager.swift */; };
+		08510CD82207473D00FAE53E /* MRHTTPSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08510CD72207473D00FAE53E /* MRHTTPSessionManager.swift */; };
+		08510CDB22074B7100FAE53E /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08510CD922074B7100FAE53E /* MusicTableViewCell.swift */; };
+		08510CDC22074B7100FAE53E /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08510CDA22074B7100FAE53E /* MusicTableViewCell.xib */; };
+		08510CDF2208757900FAE53E /* MRBusinessHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08510CDE2208757900FAE53E /* MRBusinessHelper.swift */; };
+		08510CE1220875B500FAE53E /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08510CE0220875B500FAE53E /* Music.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		08510CBE220744FB00FAE53E /* MusicReleasesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicReleasesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08510CC2220744FB00FAE53E /* MusicReleasesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicReleasesUITests.swift; sourceTree = "<group>"; };
 		08510CC4220744FB00FAE53E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08510CD52207470F00FAE53E /* MRNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRNetworkManager.swift; sourceTree = "<group>"; };
+		08510CD72207473D00FAE53E /* MRHTTPSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRHTTPSessionManager.swift; sourceTree = "<group>"; };
+		08510CD922074B7100FAE53E /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		08510CDA22074B7100FAE53E /* MusicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
+		08510CDE2208757900FAE53E /* MRBusinessHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRBusinessHelper.swift; sourceTree = "<group>"; };
+		08510CE0220875B500FAE53E /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +109,13 @@
 		08510CA1220744F800FAE53E /* MusicReleases */ = {
 			isa = PBXGroup;
 			children = (
+				08510CDD2208753A00FAE53E /* BusinessLogic */,
+				08510CD32207467D00FAE53E /* Models */,
+				08510CD22207467300FAE53E /* Views */,
+				08510CD42207468700FAE53E /* Controllers */,
+				08510CD12207464B00FAE53E /* NetworkWrappers */,
+				08510CD02207462500FAE53E /* Resources */,
 				08510CA2220744F800FAE53E /* AppDelegate.swift */,
-				08510CA4220744F800FAE53E /* ViewController.swift */,
-				08510CA6220744F800FAE53E /* Main.storyboard */,
 				08510CA9220744FB00FAE53E /* Assets.xcassets */,
 				08510CAB220744FB00FAE53E /* LaunchScreen.storyboard */,
 				08510CAE220744FB00FAE53E /* Info.plist */,
@@ -123,6 +139,56 @@
 				08510CC4220744FB00FAE53E /* Info.plist */,
 			);
 			path = MusicReleasesUITests;
+			sourceTree = "<group>";
+		};
+		08510CD02207462500FAE53E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				08510CA6220744F800FAE53E /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		08510CD12207464B00FAE53E /* NetworkWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				08510CD52207470F00FAE53E /* MRNetworkManager.swift */,
+				08510CD72207473D00FAE53E /* MRHTTPSessionManager.swift */,
+			);
+			path = NetworkWrappers;
+			sourceTree = "<group>";
+		};
+		08510CD22207467300FAE53E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08510CD922074B7100FAE53E /* MusicTableViewCell.swift */,
+				08510CDA22074B7100FAE53E /* MusicTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		08510CD32207467D00FAE53E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				08510CE0220875B500FAE53E /* Music.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		08510CD42207468700FAE53E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				08510CA4220744F800FAE53E /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		08510CDD2208753A00FAE53E /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				08510CDE2208757900FAE53E /* MRBusinessHelper.swift */,
+			);
+			path = BusinessLogic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +298,7 @@
 				08510CAD220744FB00FAE53E /* LaunchScreen.storyboard in Resources */,
 				08510CAA220744FB00FAE53E /* Assets.xcassets in Resources */,
 				08510CA8220744F800FAE53E /* Main.storyboard in Resources */,
+				08510CDC22074B7100FAE53E /* MusicTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +323,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08510CDB22074B7100FAE53E /* MusicTableViewCell.swift in Sources */,
 				08510CA5220744F800FAE53E /* ViewController.swift in Sources */,
+				08510CD62207470F00FAE53E /* MRNetworkManager.swift in Sources */,
 				08510CA3220744F800FAE53E /* AppDelegate.swift in Sources */,
+				08510CE1220875B500FAE53E /* Music.swift in Sources */,
+				08510CDF2208757900FAE53E /* MRBusinessHelper.swift in Sources */,
+				08510CD82207473D00FAE53E /* MRHTTPSessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
